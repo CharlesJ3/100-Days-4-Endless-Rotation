@@ -1,0 +1,79 @@
+@keyframes scaleUpMinor {
+  0%  {
+    transform: scale(.95);
+  }
+
+  20% {
+    transform: scale(.90);
+  }
+
+  40% {
+    transform: scale(.85);
+  }
+
+  60% {
+    transform: scale(.90);
+  }
+
+  80% {
+    transform: scale(.95);
+  }
+
+  100%  {
+    transform: scale(1.0);
+  }
+}
+
+
+body {
+  background-color: black;
+  overflow: hidden;
+}
+
+#battleArea {
+  /* background-color: black; */
+}
+
+#colorSelectOut {
+  position: absolute;
+  top: 80%;
+  width: 98%;
+  height: 19%;
+  border: 1px solid red;
+  display: flex;
+}
+
+.colorSelectInner {
+  width: 25%;
+  border: 2px solid yellow;
+  height: 100%;
+  color: white;
+  text-align: center;
+  vertical-align: baseline;
+  font-size: 3em;
+  text-shadow: 1px 1px 1px black;
+  cursor: pointer;
+}
+
+.colorSelectInner:hover{
+  animation: scaleUpMinor 3s linear infinite;
+}
+
+.colorSelectInner:focus{
+  animation: scaleUpMinor 3s linear infinite;
+}
+
+#color1{
+ background-color: rgba(170, 19, 19, 0.541);
+}
+#color2{
+ background-color: rgba(0, 28, 105, 0.671);
+
+}
+#color3{
+ background-color: rgba(2, 30, 39, 0.685);
+
+}
+#color4{
+ background-color: rgb(63, 7, 95);
+}
